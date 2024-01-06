@@ -43,7 +43,7 @@ cp Complete_Pipelline/custom_example.pth ~/.EasyOCR/model
 ```
 4. Download the .pt files as instructed in folders in the files Complete_Pipeline/weights/file_to_download.txt and Complete_Pipeline/yolov7/models/files_to_download.txt
 
-## 5. You can use any of the following 3 ways to run analysis on Video Input Data
+### 5. You can use any of the following 3 ways to run analysis on Video Input Data
 A - To automatically run the job i.e to download the file from GDrive, run the algo, and upload the processed results to box and gdrive.
 
 1. First set up the rclone and link the online storage location accordingly
@@ -74,7 +74,9 @@ Change the path in the script.slurm file accordingly
 # 2. sbatch script.slurm
 ```
 
-## The Output produced has the following format: (As an example see in runs/track)
+## Output 
+
+Output has the following format: (As an example see in runs/track)
 
 xxx.mp4 - This output video has tracking, bounding box, class, color, make & model, speed and predicted OCR output information as the car is moving.
 Vehicle - Cropped Vehicle images (if mentioned)
