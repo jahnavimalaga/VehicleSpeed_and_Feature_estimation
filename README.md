@@ -91,14 +91,14 @@ Final Output (Output.xlsx column descriptions) after running post_processing.py 
    
 The following columns are extracted based on the respective vehc_id and freq_vehc_cls inputs:
 
-6. freq_vehc_cls_conf: Mean probability of all the selected predictions
-7. avg_vehc_speed: Mean vehicle speed in mph of all the respective predictions
-8. freq_vehc_colr_1: Most frequent color predicted by the first algorithm (Histogram + KNN) of the respective predictions
-9. freq_vehc_colr_2: Top 3 most prevalent colors in the image and their mean percentages (portion of the image occupied by the predicted color) of the respective predictions.
-10. freq_mmr_1: Top 3 most probable make & models and their mean probabilities of the respective predictions with the MMR model finetuned on 15k web images of cars 
-11. freq_mmr_2: Top 3 most probable make & models and their mean probabilities of the respective predictions with the MMR model trained on Stanford and VMMR dataset
-12. freq_lp_chrs: Top 10 most common letters in the predicted license plate text of the respective predictions
-13. freq_lp_state_chrs: Top 10 most common letters in the predicted state text of the respective predictions
+5. freq_vehc_cls_conf: Mean probability of all the selected predictions
+6. avg_vehc_speed: Mean vehicle speed in mph of all the respective predictions
+7. freq_vehc_colr_1: Most frequent color predicted by the first algorithm (Histogram + KNN) of the respective predictions
+8. freq_vehc_colr_2: Top 3 most prevalent colors in the image and their mean percentages (portion of the image occupied by the predicted color) of the respective predictions.
+9. freq_mmr_1: Top 3 most probable make & models and their mean probabilities of the respective predictions with the MMR model finetuned on 15k web images of cars 
+10. freq_mmr_2: Top 3 most probable make & models and their mean probabilities of the respective predictions with the MMR model trained on Stanford and VMMR dataset
+11. freq_lp_chrs: Top 10 most common letters in the predicted license plate text of the respective predictions
+12. freq_lp_state_chrs: Top 10 most common letters in the predicted state text of the respective predictions
 
 ## References:
 Dubská, M., Herout, A., & Sochor, J. (2014). Automatic Camera Calibration for Traffic21 Understanding, In BMVC (Vol. 4, No. 6, p. 8). PDF
