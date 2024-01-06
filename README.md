@@ -41,6 +41,8 @@ cp Complete_Pipelline/custom_example.py ~/.EasyOCR/user_network
 cp Complete_Pipelline/custom_example.yaml ~/.EasyOCR/user_network
 cp Complete_Pipelline/custom_example.pth ~/.EasyOCR/model
 ```
+Download the .pt files as instructed in folders in the files Complete_Pipeline/weights/file_to_download.txt and Complete_Pipeline/yolov7/models/files_to_download.txt
+
 ## You can use any of the following 3 ways to run analysis on Video Input Data
 A - To automatically run the job i.e to download the file from GDrive, run the algo, and upload the processed results to box and gdrive.
 
