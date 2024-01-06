@@ -17,6 +17,8 @@ Note: do <<pip freeze > requirements.txt>> to freeze the env
    - **Note**: Haven't tested with images recently; may not work as expected.
 
 ## How to Run Our Code
+Note: do <<pip freeze > requirements.txt>> to freeze the env
+
 1. **To create a new environment:**
    ```bash
    conda create --name test_vvd python=3.8
