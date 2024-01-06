@@ -1,0 +1,2 @@
+resnet50_largeData_mmr.pt  -> https://drive.google.com/file/d/1Sh-jb7bScqgyBAx-wauwQBVEOKN4yUFh/view?usp=sharing
+resnet50_40epochs_mmr.pt  -> https://drive.google.com/file/d/1_7ntbyLa28GMeaN74o3em8TaKrVs12kz/view?usp=sharing
