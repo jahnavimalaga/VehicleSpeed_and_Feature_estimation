@@ -33,15 +33,15 @@ Run this command if torch is not already installed:
    ```bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
-3. In the pwd directory, perform this:
+3. In the pwd directory (i.e inside VehicleSpeed_and_Feature_estimation), perform this:
 ```bash
 mkdir ~/.EasyOCR
 cd ~/.EasyOCR
 mkdir model
 mkdir user_network
-cp Complete_Pipelline/custom_example.py ~/.EasyOCR/user_network
-cp Complete_Pipelline/custom_example.yaml ~/.EasyOCR/user_network
-cp Complete_Pipelline/custom_example.pth ~/.EasyOCR/model
+cp Complete_Pipeline/custom_example.py ~/.EasyOCR/user_network
+cp Complete_Pipeline/custom_example.yaml ~/.EasyOCR/user_network
+cp Complete_Pipeline/custom_example.pth ~/.EasyOCR/model
 ```
 4. Download the .pt files as instructed in folders in the files Complete_Pipeline/weights/file_to_download.txt and Complete_Pipeline/yolov7/models/files_to_download.txt
 
