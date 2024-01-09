@@ -49,6 +49,15 @@ cp Complete_Pipeline/custom_example.pth ~/.EasyOCR/model
 A - To automatically run the job i.e to download the file from GDrive, run the algo, and upload the processed results to box and gdrive.
 
 1. First set up the rclone and link the online storage location accordingly
+```bash
+curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip 
+unzip rclone-current-linux-amd64.zip
+cd rclone-*-linux-amd64
+mkdir ~/bin
+cp rclone ~/bin/
+export PATH=$PATH:~/bin
+source ~/.bashrc
+```
 2. Change the environment name accordingly in the run.sh if you are using a different env_name and run the below command
 ```bash
 run.sh
