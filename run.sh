@@ -56,14 +56,14 @@ box_path1="utbox:Good Systems, automated speed enforcement work w Jahnavi, Lamha
 box_path2="utbox:Good Systems, automated speed enforcement work w Jahnavi, Lamha, Tong & Eric/Jahnavi's Fall23_Work/safestreet.online data/Videos_processed"
 
 # Run rclone to cp files from Box to local
-~/bin/rclone copy "$box_path1" "$local_path" --include "*.mp4"
+~/bin/rclone copy "$box_path1" "$local_path" --include "*.{mp4,mov}"
 echo "Files transferred from box to local"
  # Verify the first move was successful
 if [ $? -eq 0 ]; then
     sleep 60
 
     # Run rclone to move files from box to box - Second transfer
-    ~/bin/rclone move "$box_path1" "$box_path2" --include "*.mp4"
+    ~/bin/rclone move "$box_path1" "$box_path2" --include "*.{mp4,mov}"
 
 
     source /work2/06519/jahnavi/frontera/miniconda3/bin/activate 
@@ -112,8 +112,8 @@ if [ $? -eq 0 ]; then
                     source local_to_gdrive_box.sh
                     echo "local_to_gdrive_box.sh completed"
                     sleep 30
-                    rm -r Complete_Pipeline/test/*.mp4
-                    echo "Deletion of Complete_Pipeline/test/*.mp4 completed"
+                    rm -r Complete_Pipeline/test/*.{mp4,mov}
+                    echo "Deletion of Complete_Pipeline/test/*.{mp4,mov} completed"
                 else
                     echo "Error in post_processing.py at $(date)"
                 fi
