@@ -21,7 +21,7 @@ Note: do <<pip freeze > requirements.txt>> to freeze the env
 
 1. **To create a new environment:**
    
-   Install miniconda.
+   Install miniconda, once this is done do the following
    ```bash
    conda create --name test_vvd python=3.8
    conda activate test_vvd
