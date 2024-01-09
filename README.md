@@ -20,10 +20,11 @@ Note: do <<pip freeze > requirements.txt>> to freeze the env
 Note: do <<pip freeze > requirements.txt>> to freeze the env
 
 1. **To create a new environment:**
+   Install miniconda
    ```bash
    conda create --name test_vvd python=3.8
    conda activate test_vvd
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    pip3 install -r requirements.txt
 
