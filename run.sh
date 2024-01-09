@@ -65,7 +65,7 @@ if [ $? -eq 0 ]; then
     # Run rclone to move files from box to box - Second transfer
     ~/bin/rclone move "$box_path1" "$box_path2" --include "*.{mp4,mov}"
 
-
+    # Change this to your conda env location
     source /work2/06519/jahnavi/frontera/miniconda3/bin/activate 
     
     file_path="CompletePipleline.out"
