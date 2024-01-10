@@ -84,7 +84,7 @@ from color_recognition.color_recognition_api import knn_classifier
 from colordetect import ColorDetect
 #---------------------
 
-VID_FORMATS = 'asf', 'avi', 'gif', 'm4v', 'mkv', 'mov', 'mp4', 'mpeg', 'mpg', 'ts', 'wmv'  # include video suffixes
+VID_FORMATS = 'asf', 'avi', 'gif', 'm4v', 'mkv', 'mov', 'mp4', 'mpeg', 'mpg', 'ts', 'wmv', 'MOV'  # include video suffixes
 
 # This function descirbes our SR model
 def SR(args):
