@@ -101,6 +101,10 @@ Can be saved to your experiment folder `runs/track/<yolo_model>_<deep_sort_model
 python track.py --source ... --save-txt
 ```
 
+## Fine-Tune EasyOCR with your own license plate datast
+
+If you want to fine-tune EasyOCR with your own license plate dataset, you may refer to [How to Fine-Tune EasyOCR with a Synthetic Dataset](https://www.freecodecamp.org/news/how-to-fine-tune-easyocr-with-a-synthetic-dataset/) and [Text recognition with deep learning methods](https://github.com/clovaai/deep-text-recognition-benchmark). These two resources explain how to generate your own dataset and train the model on it.
+
 
 ## Cite
 
