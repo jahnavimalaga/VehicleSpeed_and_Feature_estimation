@@ -103,8 +103,25 @@ python track.py --source ... --save-txt
 
 ## Fine-Tune EasyOCR with your own license plate datast
 
-If you want to fine-tune EasyOCR with your own license plate dataset, you may refer to [How to Fine-Tune EasyOCR with a Synthetic Dataset](https://www.freecodecamp.org/news/how-to-fine-tune-easyocr-with-a-synthetic-dataset/) and [Text recognition with deep learning methods](https://github.com/clovaai/deep-text-recognition-benchmark). These two resources explain how to generate your own dataset and train the model on it.
+If you want to fine-tune EasyOCR with your own license plate dataset, you may refer to [How to Fine-Tune EasyOCR with a Synthetic Dataset](https://www.freecodecamp.org/news/how-to-fine-tune-easyocr-with-a-synthetic-dataset/) and [Text recognition with deep learning methods](https://github.com/clovaai/deep-text-recognition-benchmark) for more details.
 
+1. You should have a folder with all training images, and the labels for the images (the state + license plate characters) in a labels.txt file. Run the create_lmdb_dataset.py by
+
+```bash
+python \create_lmdb_dataset.py \output \output/labels.txt \lmbd_output
+```
+
+Output files (data.mdb and lock.mdb) are stored in lmbd_output folder.
+
+2. Download pretrained model from [Text recognition with deep learning methods](https://github.com/clovaai/deep-text-recognition-benchmark). Add the above outfiles to train/result folder. Also, generate output files for test images in the same way and add them to validation/result folder. Run the model by
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data train/result --valid_data validation/result --Transformation None --FeatureExtraction VGG --SequenceModeling BiLSTM --Prediction CTC --data_filtering_off --workers 0
+```
+
+3. Once finished, replace the Complete_Pipeline/custom_example.pth with the new generated .pth file and rerun the model.
+   
+Tips: the number of iterations in step 2 can be adjusted depending on the size of training images. 
 
 ## Cite
 
